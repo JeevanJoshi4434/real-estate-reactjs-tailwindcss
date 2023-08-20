@@ -1,0 +1,119 @@
+
+'type': 'FeatureCollection',
+'features': [
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.842315, 26.893660,]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.77386213473972,
+          26.956252370619183]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.75179559942077,
+          26.920927107402804]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.75796473832807,
+          26.87479724465014]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.86782287393936,
+          26.859835877814973]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
+'icon': 'marker-editor'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.7835904004121,
+          26.806692711680498]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
+'icon': 'music'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.8415198560554, 26.95558136780312]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
+'icon': 'music'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.8315198560554, 26.82558136780312]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
+'icon': 'music'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [75.96782287393936,
+          26.859835877814973]
+}
+}
+]
+}
