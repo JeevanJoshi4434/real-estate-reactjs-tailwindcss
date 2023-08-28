@@ -6,8 +6,8 @@ import icon3 from './images/icon-3.png';
 import icon4 from './images/icon-4.png';
 import icon5 from './images/icon-5.png';
 import icon6 from './images/icon-6.png';
-import house1 from "./images/house-img-2.webp";
-import house2 from "./images/house-img-5.webp";
+import house1 from "./img/5-1.jpg";
+import house2 from "./img/1-1.jpg";
 import house3 from "./images/house-img-1.webp";
 import Footer from './Footer';
 import Nav from './Nav';
@@ -201,7 +201,7 @@ const Home = () => {
                             <img src={house3} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>3</span></p>
                             <p><i class="fas fa-bath"></i><span>3</span></p>
@@ -227,7 +227,7 @@ const Home = () => {
                             <img src={house1} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, india - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Uttar Pradesh, india</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>2</span></p>
                             <p><i class="fas fa-bath"></i><span>2</span></p>
@@ -253,7 +253,7 @@ const Home = () => {
                             <img src={house2} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, india - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Delhi, india</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>4</span></p>
                             <p><i class="fas fa-bath"></i><span>3</span></p>

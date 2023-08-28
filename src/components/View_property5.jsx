@@ -22,136 +22,99 @@ const View_property5 = () => {
             const map = new mapboxgl.Map({
                 container: divv, // container ID
                 style: 'mapbox://styles/shubham-2106/clk28bv4k004s01pg6odn61bs', // style URL
-                center: [75.808, 26.880], // starting position [lng, lat]
+                center:  [80.1870, 12.9764], // starting position [lng, lat]
                 zoom: 10.50, // starting zoom
             });
 
             map.on('load', () => {
-                map.addSource('places', {
-                    // This GeoJSON contains features that include an "icon"
-                    // property. The value of the "icon" property corresponds
-                    // to an image in the Mapbox Streets style's sprite.
-                    'type': 'geojson',
-                    'data': {
-                        'type': 'FeatureCollection',
-                        'features': [
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.842315, 26.893660,]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.77386213473972,
-                                        26.956252370619183]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property2.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.75179559942077,
-                                        26.920927107402804]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property3.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.75796473832807,
-                                        26.87479724465014]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property4.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.86782287393936,
-                                        26.859835877814973]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Modern Flats and Apartments</strong><p><a href="view_property5.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-                                    'icon': 'marker-editor'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.7835904004121,
-                                        26.806692711680498]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
-                                    'icon': 'music'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.8415198560554, 26.95558136780312]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
-                                    'icon': 'music'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.8315198560554, 26.82558136780312]
-                                }
-                            },
-                            {
-                                'type': 'Feature',
-                                'properties': {
-                                    'description':
-                                        '<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
-                                    'icon': 'music'
-                                },
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [75.96782287393936,
-                                        26.859835877814973]
-                                }
-                            }
-                        ]
+                map.addSource('places',
+                {
+                    "type": "geojson",
+                    "data": {
+                      "type": "FeatureCollection",
+                      "features": [
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Marina Beach</strong><p>Visit the famous Marina Beach in Chennai for a relaxing day by the sea.</p>",
+                            "icon": "beach"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2785, 13.0498]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Santhome Cathedral</strong><p>Explore the historical Santhome Cathedral, a significant religious site in Chennai.</p>",
+                            "icon": "religious"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2788, 13.0280]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>MGR Film City</strong><p>Experience the world of Tamil cinema at MGR Film City.</p>",
+                            "icon": "film"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.1870, 12.9764]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Birla Planetarium</strong><p>Expand your knowledge of astronomy at Birla Planetarium.</p>",
+                            "icon": "science"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2577, 13.0116]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Chennai Music Festival</strong><p>Enjoy classical music performances at the annual Chennai Music Festival.</p>",
+                            "icon": "music"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2707, 13.0827]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Art Gallery</strong><p>Discover a diverse collection of art at a Chennai art gallery.</p>",
+                            "icon": "art-gallery"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2715, 13.0640]
+                          }
+                        },
+                        {
+                          "type": "Feature",
+                          "properties": {
+                            "description": "<strong>Local Cuisine</strong><p>Savor the delicious flavors of Chennai's local cuisine at renowned eateries.</p>",
+                            "icon": "restaurant"
+                          },
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [80.2488, 13.0422]
+                          }
+                        }
+                      ]
                     }
-                });
+                  }
+                  
+                );
                 // Add a layer showing the places.
                 map.addLayer({
                     'id': 'places',
@@ -235,7 +198,7 @@ const View_property5 = () => {
                         </div>
                     </div>
                     <h3 class="name">Modern Flats and Appartments</h3>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i><span>Channai, India</span></p>
                     <div class="info">
                         <p><i class="fas fa-tag"></i><span>26 lac</span></p>
                         <p><i class="fas fa-user"></i><span>Naman (owner)</span></p>

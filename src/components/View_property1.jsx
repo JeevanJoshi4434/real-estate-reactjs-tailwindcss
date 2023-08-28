@@ -3,11 +3,11 @@ import Footer from './Footer'
 import Nav from './Nav'
 import * as mapboxgl from 'mapbox-gl';
 import { useEffect } from 'react';
-import house1 from './images/house-img-2.webp';
-import house2 from './images/house-img-2.webp';
-import house3 from './images/hall-img-2.webp';
-import house4 from './images/kitchen-img-2.webp';
-import house5 from './images/bathroom-img-2.webp';
+import house1 from './img/5-1.jpg';
+import house2 from './img/5-2.jpg';
+import house3 from './img/5-3.jpg';
+import house4 from './img/5-4.jpeg';
+import house5 from './img/5-5.jpeg';
 const View_property1 = () => {
     document.title = "View Property";
     const [time, setTime] = useState(0);
@@ -22,136 +22,110 @@ const View_property1 = () => {
 const map = new mapboxgl.Map({
     container: divv, // container ID
     style: 'mapbox://styles/shubham-2106/clk28bv4k004s01pg6odn61bs', // style URL
-    center: [75.808 ,26.880], // starting position [lng, lat]
+    center: [80.9462, 26.8467], // starting position [lng, lat]
     zoom: 10.50, // starting zoom
 });
 
 map.on('load', () => {
-    map.addSource('places', {
-    // This GeoJSON contains features that include an "icon"
-    // property. The value of the "icon" property corresponds
-    // to an image in the Mapbox Streets style's sprite.
-    'type': 'geojson',
-    'data': {
-    'type': 'FeatureCollection',
-    'features': [
+    map.addSource('places', 
     {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.842315, 26.893660,]
+        "type": "geojson",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Lucknow Landmark</strong><p><a href=\"view_property.html\" target=\"_blank\" title=\"Opens in a new window\">Lucknow Landmark</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [80.9462, 26.8467]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Agra Heights</strong><p><a href=\"view_property1.html\" target=\"_blank\" title=\"Opens in a new window\">Agra Heights</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.0183, 27.1767]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Kanpur Skies</strong><p><a href=\"view_property2.html\" target=\"_blank\" title=\"Opens in a new window\">Kanpur Skies</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [80.3200, 26.4499]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Allahabad Greens</strong><p><a href=\"view_property3.html\" target=\"_blank\" title=\"Opens in a new window\">Allahabad Greens</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [81.8432, 25.4358]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Varanasi Charm</strong><p><a href=\"view_property4.html\" target=\"_blank\" title=\"Opens in a new window\">Varanasi Charm</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [82.9560, 25.3176]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Prayagraj Horizon</strong><p><a href=\"view_property5.html\" target=\"_blank\" title=\"Opens in a new window\">Prayagraj Horizon</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [81.8463, 25.4358]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Music Fest</strong><p>The annual Uttar Pradesh Music Festival features local and international artists in a two-day celebration of music. Don't miss out!</p>",
+                "icon": "music"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [80.9462, 26.4499]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Cultural Exhibition</strong><p>Explore the rich cultural heritage of Uttar Pradesh at this exhibition showcasing traditional art, craft, and cuisine.</p>",
+                "icon": "culture"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.0183, 27.1767]
+              }
+            }
+          ]
+        }
     }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.77386213473972,
-              26.956252370619183]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property2.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.75179559942077,
-              26.920927107402804]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property3.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.75796473832807,
-              26.87479724465014]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property4.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.86782287393936,
-              26.859835877814973]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property5.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.7835904004121,
-              26.806692711680498]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.8415198560554, 26.95558136780312]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.8315198560554, 26.82558136780312]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.96782287393936,
-              26.859835877814973]
-    }
-    }
-    ]
-    }
-    });
+      
+    );
     // Add a layer showing the places.
     map.addLayer({
     'id': 'places',
@@ -235,7 +209,7 @@ map.on('load', () => {
                         </div>
                     </div>
                     <h3 className="name">Modern Flats and Appartments</h3>
-                    <p className="location"><i className="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                    <p className="location"><i className="fas fa-map-marker-alt"></i><span>Uttar Pradesh, India</span></p>
                     <div className="info">
                         <p><i className="fas fa-tag"></i><span>14 lac</span></p>
                         <p><i className="fas fa-user"></i><span>Devesh (owner)</span></p>

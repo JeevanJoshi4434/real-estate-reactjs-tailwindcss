@@ -1,11 +1,11 @@
 import React from 'react'
 import Nav from './Nav'
 import house1 from "./images/house-img-1.webp";
-import house2 from "./images/house-img-2.webp";
-import house3 from "./images/house-img-3.jpg";
-import house4 from "./images/house-img-4.webp";
-import house5 from "./images/house-img-5.webp";
-import house6 from "./images/house-img-6.webp";
+import house2 from "./img/5-1.jpg";
+import house3 from "./img/1-1.jpg";
+import house4 from "./img/3-1.jpeg";
+import house5 from "./img/4-1.jpg";
+import house6 from './images/house-img-6.webp';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 const Listings = () => {
@@ -62,7 +62,7 @@ const Listings = () => {
                             <img src={house2} alt=""/>
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Uttar Pradesh, India</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>2</span></p>
                             <p><i class="fas fa-bath"></i><span>2</span></p>
@@ -88,7 +88,7 @@ const Listings = () => {
                             <img src={house3} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Delhi, India </span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>4</span></p>
                             <p><i class="fas fa-bath"></i><span>5</span></p>
@@ -114,7 +114,7 @@ const Listings = () => {
                             <img src={house4} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Uttarakhand, India</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>5</span></p>
                             <p><i class="fas fa-bath"></i><span>5</span></p>
@@ -140,7 +140,7 @@ const Listings = () => {
                             <img src={house5} alt="" />
                         </div>
                         <h3 class="name">modern flats and appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mumbai, India</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>4</span></p>
                             <p><i class="fas fa-bath"></i><span>3</span></p>
@@ -166,7 +166,7 @@ const Listings = () => {
                             <img src={house6} alt="" />
                         </div>
                         <h3 class="name">Modern Flats and Appartments</h3>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i><span>Chennai, India</span></p>
                         <div class="flex">
                             <p><i class="fas fa-bed"></i><span>3</span></p>
                             <p><i class="fas fa-bath"></i><span>4</span></p>

@@ -3,11 +3,11 @@ import Footer from './Footer'
 import Nav from './Nav'
 import * as mapboxgl from 'mapbox-gl';
 import { useEffect } from 'react';
-import house1 from './images/house-img-4.webp';
-import house2 from './images/house-img-4.webp';
-import house3 from './images/hall-img-4.webp';
-import house4 from './images/kitchen-img-4.webp';
-import house5 from './images/bathroom-img-4.jpg';
+import house1 from './img/3-1.jpeg';
+import house2 from './img/3-2.jpg';
+import house3 from './img/3-3.jpg';
+import house4 from './img/3-4.jpg';
+import house5 from './img/3-5.jpeg';
 const View_property3 = () => {
     document.title = "View Property";
     const [time, setTime] = useState(0);
@@ -22,136 +22,99 @@ const View_property3 = () => {
 const map = new mapboxgl.Map({
     container: divv, // container ID
     style: 'mapbox://styles/shubham-2106/clk28bv4k004s01pg6odn61bs', // style URL
-    center: [75.808 ,26.880], // starting position [lng, lat]
+    center: [79.4636, 29.3803], // starting position [lng, lat]
     zoom: 10.50, // starting zoom
 });
 
 map.on('load', () => {
-    map.addSource('places', {
-    // This GeoJSON contains features that include an "icon"
-    // property. The value of the "icon" property corresponds
-    // to an image in the Mapbox Streets style's sprite.
-    'type': 'geojson',
-    'data': {
-    'type': 'FeatureCollection',
-    'features': [
+    map.addSource('places', 
     {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.842315, 26.893660,]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property1.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.77386213473972,
-              26.956252370619183]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property2.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.75179559942077,
-              26.920927107402804]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property3.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.75796473832807,
-              26.87479724465014]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property4.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.86782287393936,
-              26.859835877814973]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Modern Flats and Apartments</strong><p><a href="view_property5.html" target="_blank" title="Opens in a new window">Modern Flats and Apartments</a></p>',
-    'icon': 'marker-editor'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.7835904004121,
-              26.806692711680498]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.8415198560554, 26.95558136780312]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.8315198560554, 26.82558136780312]
-    }
-    },
-    {
-    'type': 'Feature',
-    'properties': {
-    'description':
-    '<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
-    'icon': 'music'
-    },
-    'geometry': {
-    'type': 'Point',
-    'coordinates': [75.96782287393936,
-              26.859835877814973]
-    }
-    }
-    ]
-    }
-    });
+        "type": "geojson",
+        "data": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Nainital Retreat</strong><p><a href=\"view_property.html\" target=\"_blank\" title=\"Opens in a new window\">Nainital Retreat</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [79.4636, 29.3803]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Mussoorie Heights</strong><p><a href=\"view_property1.html\" target=\"_blank\" title=\"Opens in a new window\">Mussoorie Heights</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.2186, 30.4546]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Haridwar Serenity</strong><p><a href=\"view_property2.html\" target=\"_blank\" title=\"Opens in a new window\">Haridwar Serenity</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.1684, 29.9457]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Dehradun Bliss</strong><p><a href=\"view_property3.html\" target=\"_blank\" title=\"Opens in a new window\">Dehradun Bliss</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.0322, 30.3165]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Rishikesh Adventure</strong><p><a href=\"view_property4.html\" target=\"_blank\" title=\"Opens in a new window\">Rishikesh Adventure</a></p>",
+                "icon": "marker-editor"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.2670, 30.0862]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Uttarakhand Festival</strong><p>Celebrate the diverse culture of Uttarakhand at this annual festival featuring traditional music, dance, and local cuisine.</p>",
+                "icon": "music"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [79.4636, 30.3165]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "<strong>Nature Trek</strong><p>Embark on a breathtaking trekking adventure through the scenic landscapes of Uttarakhand. Don't miss the chance to connect with nature!</p>",
+                "icon": "hiking"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [78.2670, 29.3803]
+              }
+            }
+          ]
+        }
+      }
+      
+    );
     // Add a layer showing the places.
     map.addLayer({
     'id': 'places',
@@ -235,7 +198,7 @@ map.on('load', () => {
                         </div>
                     </div>
                     <h3 class="name">Modern Flats and Appartments</h3>
-      <p class="location"><i class="fas fa-map-marker-alt"></i><span>Jaipur, India - 302001</span></p>
+      <p class="location"><i class="fas fa-map-marker-alt"></i><span>Uttarakhand, India </span></p>
       <div class="info">
          <p><i class="fas fa-tag"></i><span>30 lac</span></p>
          <p><i class="fas fa-user"></i><span>Tarun (owner)</span></p>
